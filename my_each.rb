@@ -1,6 +1,10 @@
 def my_each(collection) # put argument(s) here
   # code here\
-  collection.each do |num|
-    puts num
+  i=0
+  while i<collection.length
+     yield(collection[i])
+    
+    i+=1
   end
+   collection
 end
